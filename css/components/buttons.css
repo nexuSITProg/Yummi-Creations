@@ -1,6 +1,6 @@
 /* Introduce button */
 
-.recipe__meta__button {
+.main-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +13,7 @@
     transition: all .3s linear;
 }
 
-.recipe__meta__button__text {
+.main-btn__text {
     font-size: 14px;
 }
 
@@ -38,7 +38,7 @@
     transition: all .2s linear;
 }
 
-.recipe__meta__button:hover {
+.main-btn:hover {
     background-color: #fff;
     color: var(--text-color);
 }

@@ -188,3 +188,9 @@
         display: none;
     }
 }
+
+@media (max-width: 580px) {
+    .recipe__quick_info__time__text, .recipe__quick_info__main_ingredient__text {
+        font-size: 10px;
+    }
+}
