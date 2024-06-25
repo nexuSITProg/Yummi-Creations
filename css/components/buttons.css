@@ -70,3 +70,9 @@
     background-color: #000;
     color: #fff;
 }
+
+@media (max-width: 580px) {
+    .view_all_btn {
+        padding: 10px;
+    }
+}
