@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/global.css">
+    <!-- Классная тема чтобы иконку рядом с тайтлом поставить -->
+    <!-- <link rel="icon" href="telegram.ico" type="image/x-icon"> -->
+    <title>YummyCreations | Main</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <img src="img/header/logo.png" alt="logo" class="logo">
+            <nav class="header__nav">
+                <ul class="menu">
+                    <a href="#" class="menu__link"><li class="menu__item">Главная</li></a>
+                    <a href="#" class="menu__link"><li class="menu__item">Рецепты</li></a>
+                    <a href="#" class="menu__link"><li class="menu__item">Блог</li></a>
+                    <a href="#" class="menu__link"><li class="menu__item">Контакты</li></a>
+                    <a href="#" class="menu__link"><li class="menu__item">О нас</li></a>
+                </ul>
+            </nav>
+            <nav class="header__social">
+                <img src="img/social-icons/vk-icon.svg" alt="vk" class="social__icon">
+                <img src="img/social-icons/telegram-icon.svg" alt="tg" class="social__icon">
+                <img src="img/social-icons/youtube-icon.svg" alt="yt" class="social__icon">
+            </nav>
+        </div>
+    </header>
+    <section class="introduce">
+        <div class="slider">
+            <div class="slider__prev"></div>
+            <div class="slider__curr">
+                <div class="recipe">
+                    <div class="recipe__type">
+                        <img src="img/slider-img/slider-icons/hot.png" alt="recipe_type" class="recipe__type__img">
+                        <p class="recipe__type__info">Горячие рецепты!</p>
+                    </div>
+                    <div class="recipe__type__text">
+                        <h1 class="recipe__type__text__title">Острые куриные крылышки</h1>
+                        <p class="recipe__type__text__subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati veniam optio, nesciunt</p>
+                    </div>
+                    <div class="recipe__quick_info">
+                        <div class="recipe__quick_info__time">
+                            <img src="img/slider-img/slider-icons/timer.svg" alt="recipe_time" class="recipe__quick_info__time__img">
+                            <p class="recipe__quick_info__time__text">30 Минут</p>    
+                        </div>
+                        <div class="recipe__quick_info__main_ingredient">
+                            <img src="img/slider-img/slider-icons/spoon-fork.svg" alt="main_ingredient" class="recipe__quick_info__main_ingredient__img">
+                            <p class="recipe__quick_info__main_ingredient__text">Курица</p>
+                        </div>
+                    </div>
+                    <div class="recipe__meta">
+                        <div class="recipe__meta__author">
+                            <img src="img/slider-img/slider-icons/avatar.jpg" alt="avatar" class="recipe__meta__author__avatar">
+                            <div class="recipe__meta__text">
+                                <p class="recipe__meta__text__name">Джон Смит</p>
+                                <p class="recipe__meta__text__post_time">15 марта 2022</p>
+                            </div>
+                        </div>
+                        <div class="recipe__meta__button">
+                            <p class="recipe__meta__button__text">Посмотреть рецепт</p>
+                            <div class="play_btn">
+                                <div class="play"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hand_pick"></div>
+                <div class="recipe__img"></div>
+            </div>
+            <div class="slider__next"></div>
+        </div>
+    </section>
+    <section class="categories">
+        <div class="categories__header">
+            <h1 class="categories__title">Категории</h1>
+            <div class="view_all_btn">
+                <p class="view_all_btn__text">Посмотреть все</p>
+            </div>
+        </div>
+        <div class="categories__items">
+            <div class="categories__item grey_gradient">
+                <img src="img/categories/onigiri.png" alt="onigiri" class="categories__item__img">
+                <img src="img/categories/onigiri.png" alt="onigiri" class="categories__item__img blur">
+                <h1 class="categories__item__title">Завтрак</h1>
+            </div>
+            <div class="categories__item green_gradient">
+                <img src="img/categories/vegan.png" alt="vegan" class="categories__item__img">
+                <img src="img/categories/vegan.png" alt="vegan" class="categories__item__img blur">
+                <h1 class="categories__item__title">Веган</h1>
+            </div>
+            <div class="categories__item red_gradient">
+                <img src="img/categories/meat.png" alt="meat" class="categories__item__img">
+                <img src="img/categories/meat.png" alt="meat" class="categories__item__img blur">
+                <h1 class="categories__item__title">Мясо</h1>
+            </div>
+            <div class="categories__item yellow_gradient">
+                <img src="img/categories/dessert.png" alt="dessert" class="categories__item__img">
+                <img src="img/categories/dessert.png" alt="dessert" class="categories__item__img blur">
+                <h1 class="categories__item__title">Десерт</h1>
+            </div>
+            <div class="categories__item orange_gradient">
+                <img src="img/categories/lunch.png" alt="lunch" class="categories__item__img">
+                <img src="img/categories/lunch.png" alt="lunch" class="categories__item__img blur">
+                <h1 class="categories__item__title">Обед</h1>
+            </div>
+            <div class="categories__item brown_gradient">
+                <img src="img/categories/chockolate.png" alt="chocolate" class="categories__item__img">
+                <img src="img/categories/chockolate.png" alt="chocolate" class="categories__item__img blur">
+                <h1 class="categories__item__title">Шоколад</h1>
+            </div>
+        </div>
+    </section>
+    <section class="favorite_recipes">
+        <h1 class="favorite_recipes__title">Простые и вкусные рецепты</h1>
+        <p class="favorite_recipes__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, natus veritatis, facilis nihil, dolores velit quibusdam quisquam</p>
+        <div class="favorite_recipes__items">
+            <div class="favorite_recipes__item">
+                <img src="img/favorite-recipes/fav-burger.png" alt="burger" class="favorite_recipes__item__img">
+                <h1 class="favorite_recipes__item__title">Большой и сочный чизбургер Вагю</h1>
+                <div class="cooking_info">
+                    <div class="cooking_info__time">
+                        <img src="img/slider-img/slider-icons/timer.svg" alt="" class="cooking_info__img">
+                        <p class="cooking_info__text">30 минут</p>
+                    </div>
+                    <div class="cooking_info__type">
+                        <img src="img/slider-img/slider-icons/spoon-fork.svg" alt="" class="cooking_info__img">
+                        <p class="cooking_info__text">Снек</p>
+                    </div>
+                </div>
+            </div>
+            <div class="favorite_recipes__item">
+                <img src="img/favorite-recipes/fav-fish.png" alt="fish" class="favorite_recipes__item__img">
+                <h1 class="favorite_recipes__item__title">
+                    Свежий лосось, запеченный с лаймом, в имбирном соусе</h1>
+                <div class="cooking_info">
+                    <div class="cooking_info__time">
+                        <img src="img/slider-img/slider-icons/timer.svg" alt="" class="cooking_info__img">
+                        <p class="cooking_info__text">30 минут</p>
+                    </div>
+                    <div class="cooking_info__type">
+                        <img src="img/slider-img/slider-icons/spoon-fork.svg" alt="" class="cooking_info__img">
+                        <p class="cooking_info__text">Рыба</p>
+                    </div>
+                </div>
+            </div>
+            <div class="favorite_recipes__item">
+                <img src="img/favorite-recipes/fav-pancakes.png" alt="pancake" class="favorite_recipes__item__img">
+                <h1 class="favorite_recipes__item__title">
+                    Клубнично-овсяные блинчики с медовым сиропом</h1>
+                <div class="cooking_info">
+                    <div class="cooking_info__time">
+                        <img src="img/slider-img/slider-icons/timer.svg" alt="" class="cooking_info__img">
+                        <p class="cooking_info__text">30 минут</p>
+                    </div>
+                    <div class="cooking_info__type">
+                        <img src="img/slider-img/slider-icons/spoon-fork.svg" alt="" class="cooking_info__img">
+                        <p class="cooking_info__text">Завтрак</p>
+                    </div>
+                </div>
+            </div>
+            <div class="favorite_recipes__item">
+                <img src="img/favorite-recipes/fav-mayo-salad.png" alt="mayo-salad" class="favorite_recipes__item__img">
+                <h1 class="favorite_recipes__item__title">
+                    Свежий и полезный салат из смешанного майонеза</h1>
+                <div class="cooking_info">
+                    <div class="cooking_info__time">
+                        <img src="img/slider-img/slider-icons/timer.svg" alt="" class="cooking_info__img">
+                        <p class="cooking_info__text">30 минут</p>
+                    </div>
+                    <div class="cooking_info__type">
+                        <img src="img/slider-img/slider-icons/spoon-fork.svg" alt="" class="cooking_info__img">
+                        <p class="cooking_info__text">Здоровая</p>
+                    </div>
+                </div>
+            </div>
+            <div class="favorite_recipes__item">
+                <img src="img/favorite-recipes/fav-meatballs.png" alt="meatballs" class="favorite_recipes__item__img">
+                <h1 class="favorite_recipes__item__title">Куриные фрикадельки со сливочным сыром
+                </h1>
+                <div class="cooking_info">
+                    <div class="cooking_info__time">
+                        <img src="img/slider-img/slider-icons/timer.svg" alt="" class="cooking_info__img">
+                        <p class="cooking_info__text">30 минут</p>
+                    </div>
+                    <div class="cooking_info__type">
+                        <img src="img/slider-img/slider-icons/spoon-fork.svg" alt="" class="cooking_info__img">
+                        <p class="cooking_info__text">Мясо</p>
+                    </div>
+                </div>
+            </div>
+            <img src="img/ads.png" alt="ads" class="favorite_recipes__img">
+            <div class="favorite_recipes__item">
+                <img src="img/favorite-recipes/fav-orange-pancakes.png" alt="orange-pancakes" class="favorite_recipes__item__img">
+                <h1 class="favorite_recipes__item__title">Фруктовые блины с апельсином и черникой
+                </h1>
+                <div class="cooking_info">
+                    <div class="cooking_info__time">
+                        <img src="img/slider-img/slider-icons/timer.svg" alt="" class="cooking_info__img">
+                        <p class="cooking_info__text">30 минут</p>
+                    </div>
+                    <div class="cooking_info__type">
+                        <img src="img/slider-img/slider-icons/spoon-fork.svg" alt="" class="cooking_info__img">
+                        <p class="cooking_info__text">Сладость</p>
+                    </div>
+                </div>
+            </div>
+            <div class="favorite_recipes__item">
+                <img src="img/favorite-recipes/fav-chicken-rice.png" alt="chicken-rice" class="favorite_recipes__item__img">
+                <h1 class="favorite_recipes__item__title">Легкая курица и рис в одной кастрюле</h1>
+                <div class="cooking_info">
+                    <div class="cooking_info__time">
+                        <img src="img/slider-img/slider-icons/timer.svg" alt="" class="cooking_info__img">
+                        <p class="cooking_info__text">30 минут</p>
+                    </div>
+                    <div class="cooking_info__type">
+                        <img src="img/slider-img/slider-icons/spoon-fork.svg" alt="" class="cooking_info__img">
+                        <p class="cooking_info__text">Обед</p>
+                    </div>
+                </div>
+            </div>
+            <div class="favorite_recipes__item">
+                <img src="img/favorite-recipes/fav-chicken-pasta.png" alt="fav-chicken-pasta" class="favorite_recipes__item__img">
+                <h1 class="favorite_recipes__item__title">Самая вкусная сливочная паста с курицей и беконом
+                </h1>
+                <div class="cooking_info">
+                    <div class="cooking_info__time">
+                        <img src="img/slider-img/slider-icons/timer.svg" alt="" class="cooking_info__img">
+                        <p class="cooking_info__text">30 минут</p>
+                    </div>
+                    <div class="cooking_info__type">
+                        <img src="img/slider-img/slider-icons/spoon-fork.svg" alt="" class="cooking_info__img">
+                        <p class="cooking_info__text">Макароны</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,190 @@
+.introduce {
+    padding: 40px 0;   
+}
+
+.slider {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider__prev, .slider__next {
+    width: 5%;
+    background-color: var(--slider-bg);
+}
+
+.slider__prev {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.slider__next {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.slider__curr {
+    width: 80%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    background-color: var(--slider-bg);
+}
+
+.slider__curr, .recipe__img {
+    border-radius: 50px;
+}
+
+.recipe {
+    width: 100%;
+    padding: 50px 50px 55px 50px;
+    display: grid;
+    grid-template-rows: auto;
+    gap: 30px;
+}
+
+.recipe__type {
+    display: flex;
+    align-items: center;
+    height: 45px;
+    width: fit-content;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.recipe__type__img {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+}
+
+.recipe__type__info {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.recipe__type__text__title {
+    font-size: 64px;
+    margin-bottom: 32px;
+}
+
+.recipe__type__text__subtitle {
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+.recipe__quick_info {
+    display: flex;
+}
+
+.recipe__quick_info__time, .recipe__quick_info__main_ingredient {
+    display: flex;   
+    align-items: center;
+    padding: 8px 16px;
+    background-color: var(--info-bg);
+    border-radius: 50px;
+    margin-bottom: 72px;
+}
+
+.recipe__quick_info__time {
+    margin-right: 15px;
+}
+
+.recipe__quick_info__time__img, .recipe__quick_info__main_ingredient__img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.recipe__meta {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recipe__meta__author {
+    display: grid;
+    grid-template-columns: 56px 1fr;
+}
+
+.recipe__meta__text {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding-left: 10px;
+    gap: 5px;
+}
+
+.recipe__meta__text__name {
+    font-weight: 600;
+}
+
+.recipe__meta__text__post_time {
+    color: var(--text-color);
+}
+
+.recipe__meta__author__avatar {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.hand_pick {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-image: url(../../../img/slider-img/handpick.png);
+    background-position: center;
+    background-size: cover;
+    left: 46%;
+    top: 10%;
+}
+
+.recipe__img {
+    width: 100%;
+    height: 100%;
+    background-image: url(../../../img/slider-img/slider-img-1.png);
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+@media (max-width: 1200px) {
+    .recipe__type__text__title {
+        font-size: 50px;
+    }
+
+    .recipe__type__text__subtitle {
+        font-size: 14px;
+    }
+
+    .recipe__meta {
+        flex-direction: column;
+    }
+
+    .recipe__meta__author {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 850px) {
+    .slider__curr {
+        grid-template-columns: 1fr;
+    }
+
+    .recipe {
+        padding: 30px;
+    }
+
+    .recipe__type__text__title {
+        font-size: 40px;
+    }
+
+    .hand_pick {
+        display: none;
+    }
+
+    .recipe__img {
+        display: none;
+    }
+}

@@ -1,0 +1,72 @@
+/* Introduce button */
+
+.recipe__meta__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 60px;
+    background-color: black;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.recipe__meta__button__text {
+    font-size: 14px;
+}
+
+.play_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    margin-left: 10px;
+    border-radius: 100%;
+    transition: all .2s linear;
+}
+
+.play {
+    width: 13px;
+    height: 13px;
+    background-color: #000;
+    clip-path: polygon(100% 50%, 0 0, 0 100%);
+    margin-left: 4px;
+    transition: all .2s linear;
+}
+
+.recipe__meta__button:hover {
+    background-color: #fff;
+    color: var(--text-color);
+}
+
+.recipe__meta__button:hover .play_btn {
+    background-color: var(--text-color);
+}
+
+.recipe__meta__button:hover .play {
+    background-color: #fff;
+}
+
+/* Categories button */
+
+.view_all_btn {
+    padding: 21px 27px;
+    background-color: var(--slider-bg);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s all linear;
+}
+
+.view_all_btn__text {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.view_all_btn:hover {
+    background-color: #000;
+    color: #fff;
+}

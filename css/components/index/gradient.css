@@ -1,0 +1,23 @@
+.grey_gradient {
+    background: var(--grey-gradient)
+}
+
+.green_gradient {
+    background: var(--green-gradient);
+}
+
+.red_gradient {
+    background: var(--red-gradient);
+}
+
+.yellow_gradient {
+    background: var(--yellow-gradient);
+}
+
+.orange_gradient {
+    background: var(--orange-gradient);
+}
+
+.brown_gradient {
+    background: var(--brown-gradient);
+}

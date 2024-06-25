@@ -1,0 +1,12 @@
+:root {
+    --text-color: rgba(0,0,0,0.6);
+    --title-color: rgba(0,0,0,1);
+    --info-bg: rgba(0,0,0,0.05);
+    --slider-bg: #E7F9FD;
+    --grey-gradient: linear-gradient(to top ,rgba(112,130,70, 0.1), #fff);
+    --green-gradient: linear-gradient(to top ,rgba(108,198,63, 0.1), #fff);
+    --red-gradient: linear-gradient(to top ,rgba(204,38,27, 0.1), #fff);
+    --yellow-gradient: linear-gradient(to top ,rgba(240,158,0, 0.1), #fff);
+    --orange-gradient: linear-gradient(to top ,rgba(152, 99, 0, 0.1), #fff);
+    --brown-gradient: linear-gradient(to top ,rgba(84, 62, 23, 0.1), #fff);
+}

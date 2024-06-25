@@ -1,0 +1,122 @@
+.favorite_recipes {
+    width: 80%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.favorite_recipes__title {
+    text-align: center;
+    font-size: 48px;
+}
+
+.favorite_recipes__subtitle {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--text-color);
+    margin-top: 24px;
+}
+
+.favorite_recipes__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 90px;
+    gap: 40px;
+}
+
+.favorite_recipes__item {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background: linear-gradient(to top, var(--slider-bg), #fff);
+    border-radius: 20px;
+    padding: 24px;
+    cursor: pointer;
+}
+
+.favorite_recipes__img {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.favorite_recipes__item__img {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+
+.favorite_recipes__item__title {
+    margin-top: 24px;
+}
+
+.cooking_info {
+    display: flex;
+    margin-top: 24px;
+}
+
+.cooking_info__time, .cooking_info__type {
+    display: flex;
+    align-items: center;
+}
+
+.cooking_info__time {
+    margin-right: 24px;
+}
+
+.cooking_info__img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.cooking_info__text {
+    color: var(--text-color);
+    font-size: 14px;
+}
+
+@media (max-width: 1200px) {
+    .favorite_recipes__title {
+        font-size: 32px;
+    }
+
+    .favorite_recipes__subtitle {
+        width: 80%;
+    }
+
+    .favorite_recipes__items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .favorite_recipes__img {
+        display: none;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .favorite_recipes__title {
+        font-size: 30px;
+    }
+
+    .favorite_recipes__subtitle {
+        width: 100%;
+    }
+
+    .favorite_recipes__items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .favorite_recipes__img {
+        display: none;
+    }
+
+    .favorite_recipes__item:nth-child(4), .favorite_recipes__item:nth-child(5), .favorite_recipes__item:nth-child(6), .favorite_recipes__item:nth-child(7), .favorite_recipes__item:nth-child(8), .favorite_recipes__item:nth-child(9) {
+        display: none;
+    }
+}
