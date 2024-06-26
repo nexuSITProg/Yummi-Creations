@@ -60,6 +60,10 @@
     top: 30%;
 }
 
+.be_a_chef__btn {
+    width: 200px;
+}
+
 .be_a_chef__btn:hover {
     border: 3px solid black;
 }
