@@ -37,6 +37,7 @@
 
 .menu__link:hover {
     color: var(--title-color);
+    transform: scale(1.05);
 }
 
 .menu__item {

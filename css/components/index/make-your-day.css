@@ -1,0 +1,90 @@
+.make_your_day {
+    width: 80%;
+    margin: 0 auto;
+    padding: 90px 0;
+}
+
+.make_your_day__header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.make_your_day__title {
+    font-size: 40px;
+}
+
+.make_your_day__subtitle {
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+.make_your_day__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.make_your_day__card {
+    display: grid;
+}
+
+.make_your_day__card__img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+.make_your_day__card__img:hover {
+    transform: scale(1.05);
+}
+
+.make_your_day__card__title {
+    margin-top: 16px;
+    font-size: 18px;
+}
+
+@media (max-width: 1000px) {
+    .make_your_day__cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .make_your_day__card:nth-child(7), .make_your_day__card:nth-child(8) {
+        display: none;
+    } 
+}
+
+@media (max-width: 750px) {
+    .make_your_day__title {
+        font-size: 30px;
+    }
+
+    .make_your_day__cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 520px) {
+    .make_your_day__header {
+        grid-template-columns: 100%;
+        margin-bottom: 40px;
+    }
+
+    .make_your_day__title {
+        font-size: 30px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .make_your_day__cards {
+        grid-template-columns: 100%;
+    }
+
+    .make_your_day__card:nth-child(5), .make_your_day__card:nth-child(6) {
+        display: none;
+    } 
+}
