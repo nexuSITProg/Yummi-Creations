@@ -60,20 +60,40 @@
     top: 30%;
 }
 
+.be_a_chef__btn:hover {
+    border: 3px solid black;
+}
+
 @media (max-width: 1200px) {
     .be_a_chef {
         grid-template-columns: 100%;
         gap: 50px;
     }
+
+    .be_a_chef__content__title, .be_a_chef__content__subtitle {
+        text-align: center;
+    }
+
+    .be_a_chef__content__subtitle {
+        width: 100%;
+    }
+
+    .be_a_chef__btn {
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 580px) {
+    .be_a_chef__content__title {
+        font-size: 30px;
+    }
+    
     .be_a_chef__img__filler_1, .be_a_chef__img__filler_2, .be_a_chef__img__filler_3, .be_a_chef__img__filler_4 {
         width: 40px;
         height: 40px;
         position: absolute;
     }
-    
+
     .be_a_chef__img__filler_1 {
         top: 60%;
         left: 4%;
