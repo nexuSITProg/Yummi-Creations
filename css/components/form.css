@@ -1,0 +1,108 @@
+.contact_us {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 160px;
+}
+
+.contact_us__title {
+    text-align: center;
+    font-size: 64px;
+    margin-bottom: 80px;
+}
+
+.contact_us__img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact_us__form {
+    display: grid;
+    grid-template-columns: 400px auto;
+    gap: 40px;
+}
+
+.form__content {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 24px 40px;
+}
+
+.form__input__content, .form__textarea__content, .form__select__content {
+    display: grid;
+}
+
+.form__input, .form__select {
+    height: 60px;
+}
+
+.form__textarea {
+    height: 200px;
+}
+
+.form__input, .form__select, .form__textarea {
+    border: 1px solid var(--separator-border-color);
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 14px;
+    font-family: "Inter";
+    outline: none;
+}
+
+.form__content input::placeholder, textarea::placeholder {
+    font-size: 14px;
+    font-family: "inter";
+    font-weight: 200;
+}
+
+.form__select {
+    color: var(--text-color);
+}
+
+.form__content label {
+    color: var(--text-color);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.form__textarea__content {
+    grid-column: span 2;
+}
+
+.form-btn {
+    grid-column-start: 2;
+    width: 180px;
+}
+
+@media (max-width: 1200px) {
+    .contact_us__img {
+        display: none;
+    }
+
+    .contact_us__form {
+        grid-template-columns: 100%;
+    }
+
+    .form-btn {
+        grid-column-start: 1;
+    }
+}
+
+@media (max-width: 680px) {
+    .contact_us__title {
+        font-size: 40px;
+    }
+
+    .form__content {
+        grid-template-columns: 100%;
+    }
+
+    .form__textarea__content {
+        grid-column: 1;
+    }
+
+    .form-btn {
+        justify-self: center;
+    }
+}
