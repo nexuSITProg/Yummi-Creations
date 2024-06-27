@@ -6,5 +6,6 @@
 @import url(components/blog/index.css);
 @import url(components/buttons.css);
 @import url(components/custom-input.css);
+@import url(components/pagination.css);
 /* Utilities link */
 @import url(utilities/variables.css);
