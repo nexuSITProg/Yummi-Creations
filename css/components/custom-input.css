@@ -45,6 +45,7 @@
     }
 
     .search__input_text {
+        width: 170%;
         margin-bottom: 20px;
         border: 1px solid var(--separator-border-color);
         padding: 30px;
