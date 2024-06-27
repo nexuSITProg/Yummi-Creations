@@ -2,6 +2,7 @@
 @import url(base/index.css);
 /* Components link */
 @import url(components/index/index.css);
+@import url(components/recipe/index.css);
 @import url(components/buttons.css);
 /* Utilities link */
 @import url(utilities/variables.css);

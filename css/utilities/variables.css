@@ -2,6 +2,7 @@
     --text-color: rgba(0,0,0,0.6);
     --title-color: rgba(0,0,0,1);
     --info-bg: rgba(0,0,0,0.05);
+    --separator-border-color: rgba(0,0,0,0.1);
     --slider-bg: #E7F9FD;
     --grey-gradient: linear-gradient(to top ,rgba(112,130,70, 0.1), #fff);
     --green-gradient: linear-gradient(to top ,rgba(108,198,63, 0.1), #fff);
