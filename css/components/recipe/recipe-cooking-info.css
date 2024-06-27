@@ -103,11 +103,17 @@
 
 .ads {
     width: 100%;
+    max-width: 400px;
+    max-height: 434px;
     object-fit: cover;
     margin-top: 80px;
 }
 
 @media (max-width: 1200px) {
+    .ingredients__title {
+        text-align: center;
+    }
+
     .recipe_cooking_info {
         grid-template-columns: 100%
     }
