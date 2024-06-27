@@ -25,32 +25,9 @@
     font-size: 16px;
 }
 
-.inbox_subscribe__block {
-    display: flex;
-    align-items: center;
-    width: 80%;
-    max-width: 480px;
-    background-color: #fff;
-    border-radius: 30px;
-    margin: 0 auto;
-    position: relative;
-    margin-bottom: 80px;
-}
-
-.subscribe_input {
-    width: 100%;
-    flex-grow: 1;
-    background: 0;
-    padding: 30px;
-    border: 0;
-    border-radius: 25px;
-    font-family: "Inter";
-    outline: none;
-}
-
 .subscribe-btn {
     margin-right: 10px;
-    min-width: 160px;
+    min-width: 160px;   
 }
 
 .inbox_subscribe__img_1, .inbox_subscribe__img_2 {
@@ -75,16 +52,6 @@
 
     .inbox_subscribe__subtitle {
         width: 80%;
-    }
-
-    .inbox_subscribe__block {
-        flex-direction: column;
-        background: 0;
-    }
-
-    .subscribe_input {
-        background-color: #fff;
-        margin-bottom: 20px;
     }
 
     .inbox_subscribe__img_1, .inbox_subscribe__img_2 {
