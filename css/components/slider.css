@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.slider {
+    width: 100%;
+    margin: 50px auto 0;
+    user-select: none;
+    touch-action: pan-y;
+}
+
+.slider img {
+    pointer-events: none;
+}
+
+.slider-list {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-list.grab {
+    cursor: grab;
+}
+
+.slider-list.grabbing{
+    cursor: grabbing;
+}
+
+.slider-track {
+    display: flex;
+}
+
+.slide {
+    position: relative;
+    width: 80%;
+    margin: 0 5%;
+    background-color: #E7F9FD;
+    /* Чтобы слайды не сжимались */
+    flex-shrink: 0;
+    /* Увеличиваем и центрируем цифру внутри слайда */
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+.first {
+    margin-left: 10%;
+    margin-right: 0;
+}
+
+.last {
+    margin-right: 10%;
+    margin-left: 0;
+}

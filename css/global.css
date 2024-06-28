@@ -9,5 +9,6 @@
 @import url(components/custom-input.css);
 @import url(components/pagination.css);
 @import url(components/form.css);
+@import url(components/slider.css);
 /* Utilities link */
 @import url(utilities/variables.css);
